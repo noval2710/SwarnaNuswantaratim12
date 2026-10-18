@@ -1,0 +1,283 @@
+:root {
+  --emas: #d9b56d;
+  --gelap: #171b18;
+  --panel: #242a25;
+  --teks: #f5f0e5;
+  --redup: #c5c4b9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--gelap);
+  color: var(--teks);
+  line-height: 1.7;
+}
+
+header {
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 8%;
+  background:
+    linear-gradient(90deg, #111713ee, #11171380),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDxDfZsRZLpnPN1wzyj5HwLU7_bK0gKL4B1DtyidQyOQ&s=10")
+    center/cover;
+  border-bottom: 3px solid var(--emas);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 7%;
+  background: #111713;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #514832;
+}
+
+.logo {
+  color: var(--emas);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: var(--teks);
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--emas);
+}
+
+.label {
+  color: var(--emas);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: clamp(38px, 7vw, 76px);
+  line-height: 1.15;
+  margin: 20px 0;
+  max-width: 850px;
+}
+
+h1 span {
+  color: var(--emas);
+}
+
+header p {
+  max-width: 650px;
+  color: var(--redup);
+  font-size: 18px;
+}
+
+.tombol {
+  display: inline-block;
+  background: var(--emas);
+  color: #171713;
+  padding: 12px 22px;
+  text-decoration: none;
+  margin-top: 25px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+section {
+  padding: 65px 7%;
+  scroll-margin-top: 75px;
+}
+
+.judul {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.judul h2 {
+  font-size: clamp(27px, 4vw, 40px);
+  color: var(--emas);
+}
+
+.judul p {
+  color: var(--redup);
+  margin-top: 8px;
+}
+
+.pengantar {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  color: var(--redup);
+  font-size: 17px;
+}
+
+.fakta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.fakta div {
+  background: var(--panel);
+  border: 1px solid #48483a;
+  padding: 22px;
+  text-align: center;
+}
+
+.fakta strong {
+  display: block;
+  color: var(--emas);
+  font-size: 25px;
+}
+
+#koleksi {
+  background: #1c211d;
+}
+
+.kontrol {
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  background: #111713;
+  border: 1px solid #70603e;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 25px;
+}
+
+.kartu {
+  background: var(--panel);
+  border: 1px solid #48483a;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform .2s, border-color .2s;
+}
+
+.kartu:hover {
+  transform: translateY(-5px);
+  border-color: var(--emas);
+}
+
+.kartu img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  background: #383b35;
+}
+
+.isi {
+  padding: 22px;
+}
+
+.nomor {
+  color: var(--emas);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.kartu h3 {
+  font-size: 23px;
+  margin: 8px 0;
+}
+
+.lokasi {
+  color: var(--emas);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.kartu p {
+  color: var(--redup);
+}
+
+.catatan {
+  font-size: 13px;
+  margin-top: 14px;
+  border-top: 1px solid #48483a;
+  padding-top: 12px;
+  color: #d9d3c2;
+}
+
+.tentang {
+  max-width: 900px;
+  margin: auto;
+  background: var(--panel);
+  padding: 30px;
+  border-left: 4px solid var(--emas);
+}
+
+.tentang h3 {
+  color: var(--emas);
+  margin-bottom: 12px;
+}
+
+.tentang p {
+  color: var(--redup);
+}
+
+.sumber {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.sumber a {
+  color: var(--emas);
+}
+
+footer {
+  padding: 30px 7%;
+  text-align: center;
+  background: #101410;
+  color: var(--redup);
+  border-top: 1px solid #514832;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0 5px;
+  }
+
+  header {
+    min-height: 70vh;
+  }
+
+  section {
+    padding: 45px 5%;
+  }
+}
